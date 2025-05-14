@@ -7,5 +7,5 @@ To build and run:
 ```
 `cmake` clones the dependencies (libigl, polscope) so it may take a while.
 
-sphere.off from ["Orbifold Tutte Embeddings"](https://github.com/noamaig/euclidean_orbifolds).
-cow.off from [libigl tutorial data](https://github.com/libigl/libigl-tutorial-data).
+cow.off from [libigl tutorial data](https://github.com/libigl/libigl-tutorial-data),
+sphere.off from [here](https://github.com/noamaig/euclidean_orbifolds).
