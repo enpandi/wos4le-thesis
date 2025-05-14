@@ -3,7 +3,7 @@ The thesis document can be found [here](https://apps.cs.utexas.edu/apps/tech-rep
 
 To build and run:
 ```
-(mkdir -p build && cd build && cmake .. && make -j8) && build/wos4le
+(mkdir -p build && cd build && cmake .. && make -j8) && build/wos4le cow.off
 ```
 `cmake` clones the dependencies (libigl, polscope) so it may take a while.
 
