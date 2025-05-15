@@ -90,7 +90,7 @@ namespace Random {
 
 struct WalkParameters {
 	// the point whose displacement we are estimating
-	Eigen::Vector3d p{0.2, 0.0, 0.0};
+	Eigen::Vector3d p{0.1, 0.0, 0.0};
 	// ignore points outside mesh
 	bool mesh_contains_p{false};
 
@@ -98,7 +98,7 @@ struct WalkParameters {
 	double lambda{0.0}, mu{1.0}, epsilon{1e-3};
 
 	// stretched boundary condition coefficients
-	Eigen::Vector3d s{1.0, 0.0, 0.0};
+	Eigen::Vector3d s{2.0, 0.0, 0.0};
 
 	double ComputeB() const { return (lambda + 2*mu)  / (lambda + mu); }
 
