@@ -198,6 +198,7 @@ int main(int argc, char *argv[]) {
 	// gui
 	polyscope::init();
 	polyscope::options::automaticallyComputeSceneExtents = false;
+	polyscope::options::warnForInvalidValues = false;
 
 	auto psSlicePlane = polyscope::addSceneSlicePlane();
 	psSlicePlane->setDrawWidget(true);
