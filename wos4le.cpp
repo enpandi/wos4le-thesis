@@ -152,7 +152,7 @@ int main(int argc, char *argv[]) {
 			Eigen::Vector3d closest_point;
 			mesh.ClosestPointQuery(p, distance, closest_point);
 			if (distance < epsilon)
-				return walk_params.BoundaryDisplacement(closest_point);
+				return multiplier * walk_params.BoundaryDisplacement(closest_point);
 			if (Random::Uniform() < 0.5) {
 				Eigen::Vector3d h = Random::UnitSphere();
 				multiplier *= ((2*b-1)*mu*Eigen::Matrix3d::Identity() + (2*b*(lambda+mu)+mu)*h*h.transpose()) / (b*mu);
